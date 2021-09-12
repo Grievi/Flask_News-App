@@ -18,32 +18,31 @@
   </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row wrapper">
             <div class="col-md-8">
                 {% for  news, desc,img ,n_date, url in toplist %}
                 <div>
                 <a href="{{Url}}"><img src="{{img}}" alt=""></a>
                 <a href="{{Url}}"></a><h3>{{news}}</h3> 
-                <a href="{{Url}}"></a><h4>{{desc}}</h4> 
-                <a href="{{Url}}"></a><h5>News Date: {{n_date}}</h5> 
+                <a href="{{Url}}"></a><p>{{desc}}</p> 
+                <a href="{{Url}}"></a><p>News Date: {{n_date}}</p> 
                  
                 </div>
-                
+
                 {% endfor %}
             </div>
         </div>
     </div>
     <div class="container">
     <h1 class="text-center">Trending News</h1>
-    <div class="row">
+    <div class="row wrapper">
         <div class="col-md-8">
             {% for news, desc, n_date, url, i in all %}
 
-            <img src="{{i}}" alt="">
-            <h4>News: </h4> {{news}}
-            <h5>Description: </h5> {{desc}}
-            <h6>News Date: </h6> {{n_date}}
-            <h6>News Url: </h6> {{Url}}
+            <a href="{{Url}}"><img src="{{img}}" alt=""></a>
+            <a href="{{Url}}"></a><h3>{{news}}</h3> 
+            <a href="{{Url}}"></a><p>{{desc}}</p> 
+            <a href="{{Url}}"></a><p>News Date: {{n_date}}</p> 
 
             {% endfor %}
         </div>
