@@ -42,4 +42,22 @@ def Index():
         n_date.append(myarticles['publishedAt'])
         url.append(myarticles['url'])
 
+        toplist = zip(news, desc, img, n_date, url)
+
+    all_desc = []
+    all_news = []
+    all_img = []
+    all_n_date = []
+    all_url = []
+
+    for j in range(len(a_articles)):
+        every_article = a_articles[j]
+        news.append(every_article['title'])
+        desc.append(every_article['description'])
+        img.append(every_article['urlToImage'])
+        n_date.append(every_article['publishedAt'])
+        url.append(every_article['url'])
+
+
+
  
