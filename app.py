@@ -14,7 +14,7 @@ def Index():
                                           category='business',
                                           language='en',
                                           country='us')
-                                          
+
     all_articles = newsapi.get_everything(q='bitcoin',
                                       sources='bbc-news,the-verge',
                                       domains='bbc.co.uk,techcrunch.com',
@@ -25,6 +25,21 @@ def Index():
                                       page=2)
     
     articles = top_headlines['articles']
-    all = all_articles[articles]
+    a_articles = all_articles[articles]
+
+    desc = []
+    news = []
+    img = []
+    n_date = []
+    url = []
+
+    for i in range(len(articles)):
+        myarticles = articles[i]
+ 
+        news.append(myarticles['title'])
+        desc.append(myarticles['description'])
+        img.append(myarticles['urlToImage'])
+        n_date.append(myarticles['publishedAt'])
+        url.append(myarticles['url'])
 
  
