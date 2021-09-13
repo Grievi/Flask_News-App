@@ -9,8 +9,8 @@ def Index():
     # init
     newsapi = NewsApiClient(api_key="3535c8a6cf95459e82bd88c84db6c35b")
     # top headlines
-    top_headlines = newsapi.get_top_headlines(sources="al-jazeera-english")                                     
-    all_articles = newsapi.get_everything(sources="al-jazeera-english")
+    top_headlines = newsapi.get_top_headlines(sources="cnn")                                     
+    all_articles = newsapi.get_everything(sources="cnn")
                                       
                                      
     

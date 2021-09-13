@@ -8,8 +8,6 @@ News app is a web application  that is built on Flask python frammework. The app
 
 * navigate to the project: $ cd flask_news-app
 
-* Run this command $ chmod +x start.sh
-
 * Run the application: $ flask run
 
 * Now navigate to your browser at: localhost:5000
