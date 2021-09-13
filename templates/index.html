@@ -19,7 +19,7 @@
             <div class="col-md-12">
                 {% for  title, desc,img ,n_date, url in toplist %}
                 <div>
-                <a href="{{url}}"><img src="{{img}}" alt=""></a>
+                <a href="{{url}}"><img src="{{img}}" width="100%" alt=""></a>
                 <a href="{{url}}"></a><h3>{{news}}</h3> 
                 <a href="{{url}}"></a><p>{{desc}}</p> 
                 <a href="{{url}}"></a><p>News Date: {{n_date}}</p> 
@@ -36,7 +36,7 @@
         <div class="col-md-12">
             {% for title, desc,img , n_date, url in all %}
 
-            <a href="{{url}}"><img src="{{img}}" alt=""></a>
+            <a href="{{url}}"><img src="{{img}}" width="100%" alt=""></a>
             <a href="{{url}}"></a><h3>{{news}}</h3> 
             <a href="{{url}}"></a><p>{{desc}}</p> 
             <a href="{{url}}"></a><p>News Date: {{n_date}}</p> 
