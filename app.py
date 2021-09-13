@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from newsapi import NewsApiClient
-import newsapi
+# import newsapi
 
 app = Flask(__name__,template_folder='templates')
 
