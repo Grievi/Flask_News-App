@@ -32,7 +32,7 @@ def Index():
         n_date.append(myarticles['publishedAt'])
         url.append(myarticles['url'])
 
-    toplist = zip(news, desc, img, n_date, url)
+        toplist = zip(news, desc, img, n_date, url)
 
     all_news = []
     all_desc = []
@@ -49,7 +49,7 @@ def Index():
         all_n_date.append(every_article['publishedAt'])
         all_url.append(every_article['url'])
 
-    all = zip(all_news, all_desc, all_img, all_n_date, all_url)
+        all = zip(all_news, all_desc, all_img, all_n_date, all_url)
 
     return render_template('index.html', toplist = toplist, all = all)
 
