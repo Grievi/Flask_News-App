@@ -3,6 +3,10 @@ This is a Flask application that consumes the news api and displays news from va
 # By Grievin Otieno
 # Description
 News app is a web application  that is built on Flask python frammework. The app displays news from most popular sources, top stories , trendin g stories across the globe.
+
+# View Project
+ Live link https://ip2-flasknews.herokuapp.com/
+
 # Setup/Installation Requirements
 * clone the repo $ git clone https://github.com/Grievi/flask_news-app
 
